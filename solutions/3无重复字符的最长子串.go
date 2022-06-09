@@ -21,6 +21,23 @@ func lengthOfLongestSubstring(s string) int {
 	return ans
 }
 
+func solution2(s string) int {
+	if len(s) == 0 {
+		return 0
+	}
+	// 记录字符出现的最新的位置
+	m := make(map[byte]int)
+	left, ans := 0, 0
+	for i := 0; i < len(s); i++ {
+		if v, ok := m[s[i]]; ok {
+			left = max(left, v+1)
+		}
+		m[s[i]] = i
+		ans = max(ans, i-left+1)
+	}
+	return ans
+}
+
 func max(i, j int) int {
 	if i < j {
 		return j

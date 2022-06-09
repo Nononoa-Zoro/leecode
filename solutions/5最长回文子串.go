@@ -10,6 +10,7 @@ func LongestPalindrome(s string) string {
 	for i := range dp {
 		dp[i] = make([]bool, n)
 	}
+	// 初始化每个字符是一个回文串
 	for i := 0; i < n; i++ {
 		dp[i][i] = true
 	}
@@ -44,10 +45,5 @@ func LongestPalindrome(s string) string {
 			}
 		}
 	}
-	return subStr(s, start, start+maxLen)
-}
-
-func subStr(s string, i int, j int) string {
-	arr := []rune(s)
-	return string(arr[i:j])
+	return s[start : start+maxLen]
 }

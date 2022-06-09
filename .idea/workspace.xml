@@ -23,10 +23,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02fecccc-1480-404a-a400-76182c1018ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/passwd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rsa/rsa.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/MQ.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/Unix网络编程.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/git的常见命令操作汇总.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/golang语法.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/面试.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/121买卖股票的最佳时机.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/14最长公共前缀.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/160相交链表.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/1749任意子数组和的绝对值最大值.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/200岛屿数量.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/236二叉树的最近公共祖先.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/23合并K个升序链表.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/25K个一组翻转链表.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/33搜索旋转排序数组.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/34在排序数组中查找元素的第一个和最后一个位置.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/415字符串相加.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/46全排列.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/88合并两个有序数组.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/945使数组唯一的最小增量.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/3无重复字符的最长子串.go" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/3无重复字符的最长子串.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/5最长回文子串.go" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/5最长回文子串.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/二分查找.go" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/二分查找.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +67,9 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="29eEz4I4MfHlfpnnEYAb8QLUlFF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -62,8 +84,13 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/notes" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/notes" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="go build leecode" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -95,6 +122,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -108,9 +136,85 @@
       <screen x="0" y="25" width="1713" height="1095" />
     </state>
     <state x="563" y="363" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1713.1095@0.25.1713.1095" timestamp="1653554801735" />
+    <state width="1657" height="287" key="GridCell.Tab.0.bottom" timestamp="1654754361346">
+      <screen x="0" y="25" width="1709" height="1095" />
+    </state>
+    <state width="1657" height="287" key="GridCell.Tab.0.bottom/0.25.1709.1095@0.25.1709.1095" timestamp="1654754361346" />
+    <state width="1672" height="287" key="GridCell.Tab.0.bottom/0.25.1716.1095@0.25.1716.1095" timestamp="1654743508620" />
+    <state width="1669" height="287" key="GridCell.Tab.0.bottom/0.25.1719.1095@0.25.1719.1095" timestamp="1653633853561" />
+    <state width="1657" height="287" key="GridCell.Tab.0.bottom/0.25.1721.1095@0.25.1721.1095" timestamp="1653979061720" />
+    <state width="1672" height="287" key="GridCell.Tab.0.bottom/0.25.1724.1095@0.25.1724.1095" timestamp="1654349453291" />
+    <state width="1672" height="287" key="GridCell.Tab.0.bottom/0.25.1726.1095@0.25.1726.1095" timestamp="1654674291247" />
+    <state width="1672" height="287" key="GridCell.Tab.0.bottom/0.25.1730.1095@0.25.1730.1095" timestamp="1654327825661" />
+    <state width="1657" height="287" key="GridCell.Tab.0.center" timestamp="1654754361346">
+      <screen x="0" y="25" width="1709" height="1095" />
+    </state>
+    <state width="1657" height="287" key="GridCell.Tab.0.center/0.25.1709.1095@0.25.1709.1095" timestamp="1654754361346" />
+    <state width="1672" height="287" key="GridCell.Tab.0.center/0.25.1716.1095@0.25.1716.1095" timestamp="1654743508620" />
+    <state width="1669" height="287" key="GridCell.Tab.0.center/0.25.1719.1095@0.25.1719.1095" timestamp="1653633853560" />
+    <state width="1657" height="287" key="GridCell.Tab.0.center/0.25.1721.1095@0.25.1721.1095" timestamp="1653979061717" />
+    <state width="1672" height="287" key="GridCell.Tab.0.center/0.25.1724.1095@0.25.1724.1095" timestamp="1654349453290" />
+    <state width="1672" height="287" key="GridCell.Tab.0.center/0.25.1726.1095@0.25.1726.1095" timestamp="1654674291246" />
+    <state width="1672" height="287" key="GridCell.Tab.0.center/0.25.1730.1095@0.25.1730.1095" timestamp="1654327825660" />
+    <state width="1657" height="287" key="GridCell.Tab.0.left" timestamp="1654754361345">
+      <screen x="0" y="25" width="1709" height="1095" />
+    </state>
+    <state width="1657" height="287" key="GridCell.Tab.0.left/0.25.1709.1095@0.25.1709.1095" timestamp="1654754361345" />
+    <state width="1672" height="287" key="GridCell.Tab.0.left/0.25.1716.1095@0.25.1716.1095" timestamp="1654743508619" />
+    <state width="1669" height="287" key="GridCell.Tab.0.left/0.25.1719.1095@0.25.1719.1095" timestamp="1653633853560" />
+    <state width="1657" height="287" key="GridCell.Tab.0.left/0.25.1721.1095@0.25.1721.1095" timestamp="1653979061714" />
+    <state width="1672" height="287" key="GridCell.Tab.0.left/0.25.1724.1095@0.25.1724.1095" timestamp="1654349453289" />
+    <state width="1672" height="287" key="GridCell.Tab.0.left/0.25.1726.1095@0.25.1726.1095" timestamp="1654674291245" />
+    <state width="1672" height="287" key="GridCell.Tab.0.left/0.25.1730.1095@0.25.1730.1095" timestamp="1654327825659" />
+    <state width="1657" height="287" key="GridCell.Tab.0.right" timestamp="1654754361346">
+      <screen x="0" y="25" width="1709" height="1095" />
+    </state>
+    <state width="1657" height="287" key="GridCell.Tab.0.right/0.25.1709.1095@0.25.1709.1095" timestamp="1654754361346" />
+    <state width="1672" height="287" key="GridCell.Tab.0.right/0.25.1716.1095@0.25.1716.1095" timestamp="1654743508620" />
+    <state width="1669" height="287" key="GridCell.Tab.0.right/0.25.1719.1095@0.25.1719.1095" timestamp="1653633853561" />
+    <state width="1657" height="287" key="GridCell.Tab.0.right/0.25.1721.1095@0.25.1721.1095" timestamp="1653979061719" />
+    <state width="1672" height="287" key="GridCell.Tab.0.right/0.25.1724.1095@0.25.1724.1095" timestamp="1654349453290" />
+    <state width="1672" height="287" key="GridCell.Tab.0.right/0.25.1726.1095@0.25.1726.1095" timestamp="1654674291246" />
+    <state width="1672" height="287" key="GridCell.Tab.0.right/0.25.1730.1095@0.25.1730.1095" timestamp="1654327825660" />
+    <state width="1672" height="356" key="GridCell.Tab.1.bottom" timestamp="1654743508578">
+      <screen x="0" y="25" width="1716" height="1095" />
+    </state>
+    <state width="1672" height="356" key="GridCell.Tab.1.bottom/0.25.1716.1095@0.25.1716.1095" timestamp="1654743508578" />
+    <state width="1657" height="356" key="GridCell.Tab.1.bottom/0.25.1721.1095@0.25.1721.1095" timestamp="1653969724739" />
+    <state width="1672" height="356" key="GridCell.Tab.1.bottom/0.25.1724.1095@0.25.1724.1095" timestamp="1654323269995" />
+    <state width="1672" height="356" key="GridCell.Tab.1.bottom/0.25.1726.1095@0.25.1726.1095" timestamp="1654326175494" />
+    <state width="1672" height="356" key="GridCell.Tab.1.center" timestamp="1654743508578">
+      <screen x="0" y="25" width="1716" height="1095" />
+    </state>
+    <state width="1672" height="356" key="GridCell.Tab.1.center/0.25.1716.1095@0.25.1716.1095" timestamp="1654743508578" />
+    <state width="1657" height="356" key="GridCell.Tab.1.center/0.25.1721.1095@0.25.1721.1095" timestamp="1653969724738" />
+    <state width="1672" height="356" key="GridCell.Tab.1.center/0.25.1724.1095@0.25.1724.1095" timestamp="1654323269994" />
+    <state width="1672" height="356" key="GridCell.Tab.1.center/0.25.1726.1095@0.25.1726.1095" timestamp="1654326175493" />
+    <state width="1672" height="356" key="GridCell.Tab.1.left" timestamp="1654743508577">
+      <screen x="0" y="25" width="1716" height="1095" />
+    </state>
+    <state width="1672" height="356" key="GridCell.Tab.1.left/0.25.1716.1095@0.25.1716.1095" timestamp="1654743508577" />
+    <state width="1657" height="356" key="GridCell.Tab.1.left/0.25.1721.1095@0.25.1721.1095" timestamp="1653969724737" />
+    <state width="1672" height="356" key="GridCell.Tab.1.left/0.25.1724.1095@0.25.1724.1095" timestamp="1654323269993" />
+    <state width="1672" height="356" key="GridCell.Tab.1.left/0.25.1726.1095@0.25.1726.1095" timestamp="1654326175493" />
+    <state width="1672" height="356" key="GridCell.Tab.1.right" timestamp="1654743508578">
+      <screen x="0" y="25" width="1716" height="1095" />
+    </state>
+    <state width="1672" height="356" key="GridCell.Tab.1.right/0.25.1716.1095@0.25.1716.1095" timestamp="1654743508578" />
+    <state width="1657" height="356" key="GridCell.Tab.1.right/0.25.1721.1095@0.25.1721.1095" timestamp="1653969724738" />
+    <state width="1672" height="356" key="GridCell.Tab.1.right/0.25.1724.1095@0.25.1724.1095" timestamp="1654323269994" />
+    <state width="1672" height="356" key="GridCell.Tab.1.right/0.25.1726.1095@0.25.1726.1095" timestamp="1654326175494" />
     <state x="260" y="121" key="SettingsEditor" timestamp="1653465678913">
       <screen x="0" y="25" width="1721" height="1095" />
     </state>
     <state x="260" y="121" key="SettingsEditor/0.25.1721.1095@0.25.1721.1095" timestamp="1653465678913" />
+    <state x="481" y="285" width="746" height="574" key="find.popup" timestamp="1653897820491">
+      <screen x="0" y="25" width="1719" height="1095" />
+    </state>
+    <state x="481" y="285" width="746" height="574" key="find.popup/0.25.1719.1095@0.25.1719.1095" timestamp="1653897820491" />
+    <state x="435" y="88" width="838" height="1032" key="search.everywhere.popup" timestamp="1654753334782">
+      <screen x="0" y="25" width="1709" height="1095" />
+    </state>
+    <state x="435" y="88" width="838" height="1032" key="search.everywhere.popup/0.25.1709.1095@0.25.1709.1095" timestamp="1654753334782" />
   </component>
 </project>
