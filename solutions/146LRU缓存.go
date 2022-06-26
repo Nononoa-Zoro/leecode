@@ -1,9 +1,9 @@
 package solutions
 
 type LRUCache struct {
-	size int
-	capacity int
-	cache map[int]*DLinkedNode
+	size       int
+	capacity   int
+	cache      map[int]*DLinkedNode
 	head, tail *DLinkedNode
 }
 
@@ -14,16 +14,16 @@ type DLinkedNode struct {
 
 func initDLinkedNode(key, value int) *DLinkedNode {
 	return &DLinkedNode{
-		key: key,
+		key:   key,
 		value: value,
 	}
 }
 
 func Constructor(capacity int) LRUCache {
 	l := LRUCache{
-		cache: map[int]*DLinkedNode{},
-		head: initDLinkedNode(0, 0),
-		tail: initDLinkedNode(0, 0),
+		cache:    map[int]*DLinkedNode{},
+		head:     initDLinkedNode(0, 0),
+		tail:     initDLinkedNode(0, 0),
 		capacity: capacity,
 	}
 	l.head.next = l.tail
@@ -40,8 +40,7 @@ func (c *LRUCache) Get(key int) int {
 	return node.value
 }
 
-
-func (c *LRUCache) Put(key int, value int)  {
+func (c *LRUCache) Put(key int, value int) {
 	if _, ok := c.cache[key]; !ok {
 		node := initDLinkedNode(key, value)
 		c.cache[key] = node

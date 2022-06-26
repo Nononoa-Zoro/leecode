@@ -1,5 +1,7 @@
 package solutions
 
+import "strings"
+
 func longestCommonPrefix(strs []string) string {
 	if len(strs) == 1 {
 		return strs[0]
@@ -30,4 +32,22 @@ func minLengthOfStr(strs []string) int {
 		}
 	}
 	return res
+}
+
+// longestCommonPrefix2 解法2
+// 选择任意一个字符串作为prefix 遍历数组 如果不是子串 prefix往前截取
+func longestCommonPrefix2(strs []string) string {
+	if len(strs) < 1 {
+		return ""
+	}
+	prefix := strs[0]
+	for _, s := range strs {
+		for strings.Index(s, prefix) != 0 {
+			if prefix == "" {
+				return ""
+			}
+			prefix = prefix[:len(prefix)-1]
+		}
+	}
+	return prefix
 }
