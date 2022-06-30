@@ -2,6 +2,7 @@ package solutions
 
 import "sort"
 
+// https://leetcode.cn/problems/3sum-closest/
 func threeSumClosest(nums []int, target int) int {
 	if len(nums) < 3 {
 		return 0

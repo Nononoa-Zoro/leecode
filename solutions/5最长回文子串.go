@@ -15,8 +15,8 @@ func LongestPalindrome(s string) string {
 		dp[i][i] = true
 	}
 
-	maxLen := 1
-	start := 0 // 记录结果最长子串的左边界索引
+	maxLen := 1 // 回文串最大长度
+	start := 0  // 记录结果最长子串的左边界索引
 	// 枚举子串长度
 	for L := 2; L <= n; L++ {
 		for i := 0; i < n; i++ {
@@ -38,7 +38,7 @@ func LongestPalindrome(s string) string {
 				}
 			}
 
-			// 更新最大子串长度
+			// 更新最大子串长度和子串的起始位置
 			if dp[i][j] && j-i+1 > maxLen {
 				maxLen = j - i + 1
 				start = i
