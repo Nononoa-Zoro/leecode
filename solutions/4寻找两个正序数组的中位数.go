@@ -1,26 +1,37 @@
 package solutions
 
+// findMedianSortedArrays 在两个升序数组中找到中位数
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
-	n := len(nums1)
-	m := len(nums2)
-	length := n + m
-	// nums1 nums2的指针
-	a, b := 0, 0
-	// last保存每次循环的当前元素左边的那个元素
-	last, cur := -1, -1
-	for i := 0; i <= length/2; i++ {
-		last = cur
-		if a < n && (b >= m || nums1[a] < nums2[b]) {
-			cur = nums1[a]
-			a++
+	len1 := len(nums1)
+	len2 := len(nums2)
+	length := len1 + len2
+	arr := make([]int, length, length)
+	i, j, k := 0, 0, 0
+	for i != len1 && j != len2 {
+		if nums1[i] < nums2[j] {
+			arr[k] = nums1[i]
+			k++
+			i++
 		} else {
-			cur = nums2[b]
-			b++
+			arr[k] = nums2[j]
+			k++
+			j++
 		}
 	}
-	// 总长度为偶数 选中间两个 取平均
-	if length&1 == 0 {
-		return float64(last+cur) / 2
+	for i != len1 {
+		arr[k] = nums1[i]
+		i++
+		k++
 	}
-	return float64(cur)
+	for j != len2 {
+		arr[k] = nums2[j]
+		j++
+		k++
+	}
+	middle := length >> 1
+	if length&1 != 0 {
+		return float64(arr[middle])
+	} else {
+		return float64(arr[middle-1]+arr[middle]) / 2
+	}
 }
