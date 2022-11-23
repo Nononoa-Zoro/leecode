@@ -78,7 +78,7 @@
 |      |                                                              |
 |      | git fetch是将远程主机的最新内容拉到本地，用户在检查了以后决定是否合并到工作本机分支中。(需要手动执行git merge操作) |
 |      |                                                              |
-|      | git fetch origin <远程分支名称>:<本地分支名称> //从远程分支拉去并在本地创建一个分支与之关联 |
+|      | git fetch origin <远程分支名称>:<本地分支名称> //从远程分支拉去并在本地创建一个分支与之关联 | git fetch origin branchA:branchA 使用远程分支branchA创建本地分支branchA
 |      |                                                              |
 |      | git推送本地分支到远程分支                                    |
 |      | 首先需要pull远程分支代码 git pull origin dev（远程分支名称） |
@@ -187,7 +187,6 @@ working space：工作区，使用git commit 之后，文件的就被提交到�
 HEAD：指向当前分支版本最新的一个提交。
 
 
-
 #### git reset的使用
 
 git reset --option <commit-id or branch>
@@ -199,3 +198,38 @@ soft：暂存区和工作区的改动都不会变动的情况下，将HEAD指向
 hard：暂存区和工作区全部修改为指定commit-id的状态。
 
 mixed：也是默认的情况，将HEAD重置为指定commit-id，重置暂存区，但是工作区不会变。
+
+#### git config配置文件
+1. 全局配置文件 /etc/gitconfig
+2. 当前用户配置文件 ~/.gitconfig
+3. 当前项目配置文件 .git/config
+优先级由高到低3>2>1
+
+### 查看当前指定行范围的修改者
+git blame -L n1,n2 filename
+
+### git 查看远程仓库地址
+git remote -v
+
+### git 删除untracked文件
+尚未提交到index的文件称为untracked文件
+git clean -dfx 删除当前目录下untracked的目录和文件
+
+### git rebase
+本质上是将一个分支上的修改在另外一个分支上再应用一次。
+
+git rebase 修改commit msg
+1. checkout到需要修改commit msg的分支
+2. git rebase -i commit-id 
+在vim中edit需要的commit
+wq退出
+3. 执行git commit --amend 修改commit msg
+4. 执行git rebase --continue继续rebase 直到提示successfully
+
+notice:
+edit will pause the rebase entirely, allowing you to change files in the commit and/or the commit message. 
+reword will simply open an editor to let you change the commit message only.
+
+### git cherry-pick
+转移分支中的commit到当前分支
+git cherry-pick <commit-A> <commit-B>

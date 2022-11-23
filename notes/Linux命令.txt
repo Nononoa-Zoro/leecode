@@ -1,0 +1,6 @@
+grep
+grep 'linux$' file // 在file中搜索以linux结尾的行
+
+find
+find / -name "xxx" -type d // 查找指定名字的目录
+find / -name "xxx" -type f // 查找指定名字的文件
